@@ -12,11 +12,13 @@ class Dog1 extends Animal12 {
     @Override
     void sound() {
         System.out.println("Dog says: Woof Woof!");
+        System.out.println("Dog says: Woof Woof!");
     }
 
     @Override
     void type() {
         System.out.println("Dog is a domestic animal.");
+        
     }
 }
 
