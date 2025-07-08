@@ -1,38 +1,33 @@
-
 package Arrays;
 public class palindromeArray {
 
-    public static void main(String[] args) {
-        int[] arr1 = {1,2,4,5,2,1};
+    static void palindrome(int arr[], int n)
+    {
+         
+        int flag = 0;
 
-        System.out.println("Original array:");
-        for (int num : arr1) {
-            System.out.print(num + " ");
+     
+        for (int i = 0; i <= n / 2 && n != 0; i++) {
+
+             
+            if (arr[i] != arr[n - i - 1]) {
+                flag = 1;
+                break;
+            }
         }
 
-        // Reverse the array in-place
-        int start = 0;
-        int end = arr1.length - 1;
+         
+        if (flag == 1)
+            System.out.println("Not Palindrome!!!");
+        else
+            System.out.println("Palindrome!!!");
+    }
+ 
+    public static void main(String[] args)
+    {
+        int arr[] = { 1, 2, 3, 2, 1 };
+        int n = arr.length;
 
-        while (start < end) {
-            int temp = arr1[start];
-            arr1[start] = arr1[end];
-            arr1[end] = temp;
-            start++;
-            end--;
-        }
-
-        System.out.println("\nReversed array:");
-        for (int num2 : arr1) {
-            System.out.print(num2 + " ");
-            
-        }
-        	if(arr1==) {
-        		System.out.println("\nPalindrome!!!");
-        	}
-        	else {
-        		System.out.println("Not a Palindrome!!!");
-        	}
-    
+        palindrome(arr, n);
     }
 }
