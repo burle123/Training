@@ -8,8 +8,6 @@ abstract class Banking{
 	abstract void deposit(int amount);
 	abstract void checkBalance();
 }
-
-
   class AbstractionMain extends Banking{
 	  
 	  @Override
