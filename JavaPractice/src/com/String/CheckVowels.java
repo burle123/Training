@@ -4,7 +4,8 @@ public class CheckVowels {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String str="Shantanu Burle";
+		String str="Shantanu BUrle";
+		str=str.toLowerCase();
         char[] ch=str.toCharArray();
         int count=0;
         for(int i=0;i<str.length();i++) {
