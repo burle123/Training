@@ -14,7 +14,7 @@ public class isPrime {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(Prime(0));
+		System.out.println(Prime(9));
 	}
 
 }
