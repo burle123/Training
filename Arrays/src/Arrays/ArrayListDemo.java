@@ -10,7 +10,7 @@ public class ArrayListDemo {
 		list.add(20);
 		list.add(30);
 		list.add(40);
-		list.addFirst(1 ); 	 	
+		list.addFirst(1 ); 	 	 	 	 	
 		
 		System.out.println(list);
 	}
